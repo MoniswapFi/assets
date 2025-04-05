@@ -75,7 +75,10 @@ function checkERC20() {
       JSON.stringify(erc20FilePaths),
     );
     // Run schema check
-    const { success, error } = z.array(ERC20Schema).safeParse(erc20InfoObject);
+    const { success, error } = z
+      .array(ERC20Schema)
+      .min(1)
+      .safeParse(erc20InfoObject);
     return [success, error];
   }
 }
