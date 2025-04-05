@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Wrapped Bera",
+    "symbol": "WBERA",
+    "address": "0x6969696969696969696969696969696969696969",
+    "logoURI": "https://artio-static-asset-public.s3.ap-southeast-1.amazonaws.com/assets/wbera.png",
+    "decimals": 18,
+    "chainId": 80069
+  },
+  {
+    "name": "Bridged USDC (Stargate)",
+    "symbol": "USDC.e",
+    "address": "0x43B6ab53A739648C72743Df4c041839fA8aD665E",
+    "logoURI": "https://berascan.com/token/images/usdc_32.svg",
+    "decimals": 6,
+    "chainId": 80069
+  },
+  {
+    "name": "Moniswap Token",
+    "symbol": "MONI",
+    "address": "0xc361d30b85736f4795a474946C9ca24378373bCF",
+    "logoURI": "https://avatars.githubusercontent.com/u/164018330?s=400&u=e64d7b4d2fec89ee15300ac0c6ca2b003e6a4482&v=4",
+    "decimals": 18,
+    "chainId": 80069
+  }
+]

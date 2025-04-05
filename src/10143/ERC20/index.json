@@ -1,5 +1,5 @@
 [
-{
+  {
     "name": "Monad Coin",
     "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
     "symbol": "MON",
@@ -111,5 +111,4 @@
     "logoURI": "https://cryptologos.cc/logos/basic-attention-token-bat-logo.png?v=040",
     "chainId": 10143
   }
-    
 ]

@@ -55,19 +55,27 @@ function checkERC20() {
   if (!isValidFS) return [false, new Error('Invalid folder structure')];
   else {
     // Find ERC20 file path
-    const erc20FilePath = traversalResult.find(
+    const erc20FilePaths = traversalResult.filter(
       (result) =>
         result.toLowerCase().includes(erc20DirectoryName) &&
         result.includes('index.json'),
     );
-    if (!erc20FilePath) return [false, new Error('Invalid ERC20 file path')];
-    // Read file
-    const fileContent = fs.readFileSync(erc20FilePath);
+    if (!erc20FilePaths.length)
+      return [false, new Error('Invalid ERC20 file path')];
+    // Read files
+    const fileContents = erc20FilePaths.map((erc20FilePath) =>
+      fs.readFileSync(erc20FilePath),
+    );
     // Stringify and parse
-    const erc20InfoObject = JSON.parse(fileContent.toString());
-    console.info('Now running schema check for: %s', erc20FilePath);
+    const erc20InfoObject = fileContents.map((fileContent) =>
+      JSON.parse(fileContent.toString()),
+    );
+    console.info(
+      'Now running schema check for: %s',
+      JSON.stringify(erc20FilePaths),
+    );
     // Run schema check
-    const { success, error } = ERC20Schema.safeParse(erc20InfoObject);
+    const { success, error } = z.array(ERC20Schema).safeParse(erc20InfoObject);
     return [success, error];
   }
 }
