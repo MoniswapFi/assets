@@ -8,6 +8,14 @@
     "chainId": 80069
   },
   {
+    "name": "Bepolia Bera",
+    "symbol": "BERA",
+    "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+    "logoURI": "https://artio-static-asset-public.s3.ap-southeast-1.amazonaws.com/assets/bera.png",
+    "decimals": 18,
+    "chainId": 80069
+  },
+  {
     "name": "Bridged USDC (Stargate)",
     "symbol": "USDC.e",
     "address": "0x43B6ab53A739648C72743Df4c041839fA8aD665E",
@@ -20,6 +28,14 @@
     "symbol": "MONI",
     "address": "0xc361d30b85736f4795a474946C9ca24378373bCF",
     "logoURI": "https://avatars.githubusercontent.com/u/164018330?s=400&u=e64d7b4d2fec89ee15300ac0c6ca2b003e6a4482&v=4",
+    "decimals": 18,
+    "chainId": 80069
+  },
+  {
+    "name": "Honey",
+    "symbol": "HONEY",
+    "address": "0xFCBD14DC51f0A4d49d5E53C2E0950e0bC26d0Dce",
+    "logoURI": "https://res.cloudinary.com/duv0g402y/raw/upload/v1717773645/src/assets/honey.png",
     "decimals": 18,
     "chainId": 80069
   }
